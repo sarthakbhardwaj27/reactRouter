@@ -22,7 +22,7 @@ The project is organized with the following components:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-react-router-project.git
+   git clone https://github.com/sarthakbhardwaj27/reactRouter.git
    ```
 
 2. Install dependencies:
