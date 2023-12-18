@@ -8,7 +8,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
-import Github from './components/Github/Github.jsx'
+import Github, { getGithubInfo } from './components/Github/Github.jsx'
 
 // const router = createBrowserRouter([
 //   {
@@ -40,7 +40,8 @@ const router = createBrowserRouter(
       <Route path='contact' element={<Contact />} />
       <Route path='user/:userid' element={<User />} />
       <Route
-         
+        //for optmization we use loader as this will directly run the api call as soon as we hover onthis Github tag
+        loader={getGithubInfo}
         path='github' 
         element={<Github />} 
       />
