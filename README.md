@@ -1,6 +1,6 @@
 # React Router Project
 
-This project is a simple React application utilizing the `react-router-dom` library to implement client-side routing. The application consists of multiple components, including pages for the Home, About, Contact, and dynamic routing for User profiles. Additionally, there's a GitHub component that fetches and displays GitHub user information.
+This project is a simple React application utilizing the `react-router-dom` library to implement client-side routing. The application consists of multiple components, including pages for the Home, About, Contact, and dynamic routing for User profiles. Additionally, there's a GitHub component that fetches and displays GitHub user information via its API.
 
 ## Project Structure
 
@@ -45,7 +45,7 @@ The project uses the `createBrowserRouter` function from `react-router-dom` to d
 
 Dynamic routing is implemented for the `User` component, allowing navigation to user profiles with specific IDs.
 
-The GitHub component (`Github.jsx`) fetches and displays information from the GitHub API.
+The GitHub component (`Github.jsx`) fetches and displays information from the GitHub API. We have also optimized this component by using `loader` attribute in the github route in `main.jsx` file.
 
 ## Components
 
